@@ -1,0 +1,22 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: large;
+    border: 2px solid white;
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+    text-align: center;
+}
+
+p {
+    padding: 5px 5px;
+}
+
+figure {
+    border: 1px solid #ccc;
+}
+
+figcaption {
+    font-style: italic;
+}
