@@ -1,0 +1,42 @@
+<!-- e) Leia as medidas dos três lados de um triângulo e classifique quanto à 
+medida de seus lados se ele é um:
+    * Triângulo equilátero: 3 lados iguais;
+    * Triângulo isósceles: 2 lados iguais;
+    * Triângulo escaleno: 3 lados diferentes;-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            
+            var a = prompt("Digite o tamanho do primeiro lado do triângulo:");
+            var b = prompt("Digite o tamanho do segundo lado do triângulo:");
+            var c = prompt("Digite o tamanho do terceiro lado do triângulo:");
+
+            if (a == b && b == c){
+                console.log("As medidas dos lados deste triângulo (" + a + ", " + b + " e " + c + ") tornam-no um triângulo equilátero.");
+            }
+            else if (a == b && b != c){
+                console.log("As medidas dos lados deste triângulo (" + a + ", " + b + " e " + c + ") tornam-no um triângulo isósceles.");
+            }
+            else if (a == c && c != b){
+                console.log("As medidas dos lados deste triângulo (" + a + ", " + b + " e " + c + ") tornam-no um triângulo isósceles.");
+            }
+            else if (b == c && c != a){
+                console.log("As medidas dos lados deste triângulo (" + a + ", " + b + " e " + c + ") tornam-no um triângulo isósceles.");
+            }
+            else if (a != b && a != c && b != c){
+                console.log("As medidas dos lados deste triângulo (" + a + ", " + b + " e " + c + ") tornam-no um triângulo escaleno.");
+            }
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,21 @@
+<!-- 5) Faça um algoritmo que receba o valor de um produto e a porcentagem de desconto que ele irá obter. Informe o total que deverá ser pago pelo produto.-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            var precoProduto = parseFloat(prompt("Digite o preço do produto que você pretende comprar."));
+            var desconto = parseInt(prompt("Digite a porcentagem de desconto que será aplicada ao preço do produto."));
+            var precoFinal = precoProduto - (precoProduto * (desconto/100));
+            alert("O preço final do produto, após o desconto de " + desconto + "% ter sido aplicado, é de R$" + precoFinal + " reais.")
+        </script>
+
+    </body>
+
+</html>

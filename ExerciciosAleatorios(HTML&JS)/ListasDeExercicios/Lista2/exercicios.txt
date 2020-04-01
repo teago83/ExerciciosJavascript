@@ -1,0 +1,28 @@
+1) Faça um algoritmo que peça um número e então mostre a mensagem: "O número informado foi: [X]".
+
+2) Faça um algoritmo que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius. Fórmula: (5 * (Fahrenheit - 32) / 9).
+
+3) Faça um algoritmo que peça o valor da gasolina e do álcool de um posto e diga qual é o valor do combustível mais vantajoso para abastecer. Sabe-se que somente é vantagem abastecer álcool se o preço do mesmo for menor ou igual a 70% do valor da gasolina.
+
+4) Faça um algoritmo que receba o peso e a altura de uma pessoa. Calcule o IMC dessa pessoa. 
+
+5) Faça um algoritmo que receba o valor de um produto e a porcentagem de desconto que ele irá obter. Informe o total que deverá ser pago pelo produto.
+
+6) Faça um algoritmo que calcule a soma dos 50 primeiros números pares.
+
+7) Faça um algoritmo para imprimir a tabuada de qualquer número informado pelo usuário. Exiba a tabuada desse número de 1 a 10. 
+
+8) Faça um algoritmo que calcule a média de diversas notas digitadas pelo usuário.
+
+9) Faça um algoritmo que colete 5 números e imprima o quadrado de cada número. 
+
+10) Faça um algoritmo que peça ao usuário para digitar várias idades. Exiba quantas pessoas são maiores de 18 e quantas não são.
+
+11) Faça um algoritmo que solicite a altura e o sexo de cinco pessoas. Imprima na tela quantas pessoas são do sexo masculino e quantas são do sexo feminino. 
+
+12) Faça um algoritmo que solicite o nome e o salário de um funcionário e mostre seu novo salário, sabendo que o mesmo teve um aumento de 10%.
+
+13) Faça um algoritmo que leia o nome e as três notas de uma disciplica de um aluno e, no fim, escreva o nome do aluno, sua média e se ele foi aprovado ou não. Sabe-se que a média para aprovação escolar é 7. 
+
+14) Faça um algoritmo que receba dois números reais e um código de seleção de usuário. Se o código digitado for 1, faça o algoritmo adicionar os dois números previamente digitados e mostrar o resultado. Se o código de seleção for 2, os números deverão ser multiplicados. Se o código for 3, o primeiro número deve ser dividido pelo segundo. 
+

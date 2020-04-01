@@ -1,0 +1,42 @@
+<!-- g) Calcule as soluções de uma equação de segundo grau do tipo ax² + bx + c = 0. 
+O programa deve pedir ao usuário para fornecer o 'a', o 'b' e o 'c'.
+    * Se o delta for menor que 0, a equação não tem raízes reais;
+    * Se o delta for igual a 0, a equação tem 2 raízes idênticas;
+    * Se o delta for maior que 0, a equação terá 2 raízes diferentes.-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            var a = parseInt(prompt("Digite o valor da variável 'a'"));
+            var b = parseInt(prompt("Digite o valor da variável 'b'"));
+            var c = parseInt(prompt("Digite o valor da variável 'c'"));
+
+            /* 
+            BHASKARA:
+            x = (-b+-√b² - 4*a*c)/2*a
+            */
+
+            var delta = (b * b) - 4 * a * c;
+
+            if (delta < 0){
+                console.log("O delta equivale a: " + delta + ". Portanto, a equação fornecida não possui raízes reais.");
+            }
+            if (delta == 0){
+                console.log("O delta equivale a: " + delta + ". Portanto, a equação fornecida possui duas raízes idênticas.");
+            }
+            if (delta > 0){
+                console.log("O delta equivale a: " + delta + ". Portanto, a equação fornecida possui duas raízes diferentes.");
+            }
+
+        </script>
+
+    </body>
+
+</html>

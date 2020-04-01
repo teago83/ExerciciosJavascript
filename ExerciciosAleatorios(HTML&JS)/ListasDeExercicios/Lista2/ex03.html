@@ -1,0 +1,27 @@
+<!-- 3) Faça um algoritmo que peça o valor da gasolina e do álcool de um posto e diga qual é o valor do combustível mais vantajoso para abastecer. Sabe-se que somente é vantagem abastecer álcool se o preço do mesmo for menor ou igual a 70% do valor da gasolina.-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            var gasosa = parseFloat(prompt("Digite o valor da gasolina neste posto."));
+            var alcool = parseFloat(prompt("Digite o valor do álcool nesse posto."));
+
+            if (alcool <= (gasosa * 0.7)){
+                alert("É mais vantajoso abastecer com álcool nesse posto.");
+            }
+            else {
+                alert("É mais vantajoso abastecer com gasolina nesse posto.");
+            }
+
+        </script>
+
+    </body>
+
+</html>
