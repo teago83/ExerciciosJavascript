@@ -1,0 +1,38 @@
+<!-- 10) Faça um algoritmo que peça ao usuário para digitar várias idades. Exiba quantas pessoas são maiores de 18 e quantas não são.-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            
+            var veinhos = parseInt(0);
+            var desveio = parseInt(0);
+
+            do{
+                
+                var idade = parseInt(prompt("Digite a idade de uma pessoa:"));
+                
+                if (idade >= 18){
+                    veinhos = veinhos + 1;
+                }
+                else {
+                    desveio = desveio + 1;
+                }
+                
+                var repetir = confirm("Deseja digitar mais idades?");
+            } while (repetir == true);
+
+            alert("A quantidade de pessoas maiores de 18 cujas idades digitaste equivale a: " + veinhos + ".");
+            alert("A quantidade de pessoas menores de 18 cujas idades digitaste equivale a: " + desveio + ".");
+
+        </script>
+
+    </body>
+
+</html>

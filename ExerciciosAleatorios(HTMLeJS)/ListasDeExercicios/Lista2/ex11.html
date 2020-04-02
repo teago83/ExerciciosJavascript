@@ -1,0 +1,47 @@
+<!-- 11) Faça um algoritmo que solicite a altura e o sexo de cinco pessoas. Imprima na tela quantas pessoas são do sexo masculino e quantas são do sexo feminino. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            
+            var homi = parseInt(0);
+            var muie = parseInt(0);
+
+            for (var i=0; i<5; i++){
+            
+                do{
+                    var sesgo = prompt("Digite o seu gênero. \nOpções: Masculino e feminino.");
+                    sexo = sesgo.toLowerCase();
+                    alert(sexo);
+                    if (sexo != "masculino" && sexo != "feminino") {
+                        alert("Opção inválida. Tente novamente.")
+                    }
+                } while (sexo != "masculino" && sexo != "feminino");
+
+                var altura = parseFloat("Digite a sua altura.");
+                
+                switch(sexo){
+                    case("masculino"):
+                        homi = homi + 1;
+                        break;
+                    case("feminino"):
+                        muie = muie + 1;
+                        break;
+                }
+            }
+
+            alert("O número de homens que foi somado é: " + homi + ".");
+            alert("O número de mulheres que foi somado é: " + muie + ".");
+
+        </script>
+
+    </body>
+
+</html>

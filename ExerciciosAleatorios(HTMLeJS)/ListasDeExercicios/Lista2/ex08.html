@@ -1,0 +1,36 @@
+<!-- 8) Faça um algoritmo que calcule a média de diversas notas digitadas pelo usuário. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            var batata = "assada"; //variável usada para sair do loop após ter mostrado as informações finais.
+            var soma = parseInt(0);
+            var numeroRepeticoes = parseInt(0);
+
+            do{
+                var numero = parseInt(prompt("Digite o número para ser adicionado à soma da qual calcularemos a média depois:"));
+                soma = soma + numero;
+                numeroRepeticoes = numeroRepeticoes + 1;
+                var repetir = confirm("Você deseja repetir o processo?");
+                if (repetir == false) {
+                    alert("O valor total da soma foi: " + soma);
+                    alert("O número de repetições foi: " + numeroRepeticoes);
+                    alert("A média da soma equivale a: " + soma / numeroRepeticoes);
+                    batata = "frita";
+                }
+            } while (batata != "frita");
+
+            
+
+        </script>
+
+    </body>
+
+</html>
