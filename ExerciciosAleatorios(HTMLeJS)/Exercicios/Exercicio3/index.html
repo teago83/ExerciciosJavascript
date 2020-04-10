@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Listagem de Exercícios</title>
+    <!-- Principal CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Exercícios</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Listagem 3 <span class="sr-only">(atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Listagem 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Listagem 1</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="starter-template">
+            <h1>Listagem 3</h1>
+            <p class="lead">Esta lista de exercícios aborda os conceitos básicos de validação de formulários.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Questão 1</h5>
+                        <p class="card-text">Implementar uma calculadora com as quatro operações fundamentais.
+                            O valor da caixa select poderá ser obtido da mesma forma que se obtém o valor das caixas de
+                            texto.
+                            O resultado do cálculo deve ser exibido em um outro campo de texto.
+                            Use a função parseFloatpara converter os números reais.</p>
+                        <a href="q1.html" target="_blank" class="btn btn-outline-success my-2 my-sm-0">Ver resposta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Questão 2</h5>
+                        <p class="card-text">Elaborar um formulário HTML que tenha como entrada três valores para os
+                            lados de um triângulo.
+                            Escreva uma função (tipoTriangulo) que receba três parâmetros para os lados deste triângulo.
+                            Imprima sua classificação (equilátero, isósceles ou escaleno) em uma div.
+                            A passagem dos parâmetros deve ser feita de forma simplificada dentro do HTML no evento
+                            onclick de um botão ou link da seguinte forma: tipoTriangulo(txtLado1.value, txtLado2.value,
+                            txtLado3.value).
+                        </p>
+                        <a href="q2.html" target="_blank" class="btn btn-outline-success my-2 my-sm-0">Ver resposta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Questão 3</h5>
+                        <p class="card-text">Deseja-se calcular a conta de consumo de energia elétrica de uma casa.
+                            Para isso, elabore um formulário em HTML que leia a quantidade de Kwh consumidos e o valor
+                            unitário do Kwh. Escreva uma função em JavaScript que faça o cálculo (valor = quantidade x
+                            valor unitário) e,
+                            caso a quantidade de Kwh ultrapasse 100, o valor do Kwh deve ser acrescido em 25%. Caso
+                            ultrapasse 200, o mesmo valor deve ser acrescido em 50%.
+                            Os valores devem ser repassados para uma função em JavaScript conforme o exercício anterior.
+                        </p>
+                        <a href="q3.html" target="_blank" class="btn btn-outline-success my-2 my-sm-0">Ver resposta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Questão 4</h5>
+                        <p class="card-text">Use uma página HTML e um arquivo de scripts.
+                            Use o evento onsubmit do formulário e uma função de validação que retorne true ou false.
+                            Utilize uma página qualquer como action do formulário.
+                            Copie o valor de um campo texto para outro, caso o campo de origem não esteja vazio.
+                            Use o evento onblur do campo de origem.
+                        </p>
+                        <a href="q4.html" target="_blank" class="btn btn-outline-success my-2 my-sm-0">Ver resposta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Questão 5</h5>
+                        <p class="card-text">Valide se dois campos do tipo password são idênticos.</p>
+                        <a href="q5.html" target="_blank" class="btn btn-outline-success my-2 my-sm-0">Ver resposta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Questão 6</h5>
+                        <p class="card-text">Valide um campo senha de acordo com o seu tamanho.
+                            Valor < 3: segurança fraca. Valor Entre 3 e 5: segurança média. Valor >= 6: segurança forte.
+                        </p>
+                        <a href="q6.html" target="_blank" class="btn btn-outline-success my-2 my-sm-0">Ver resposta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Questão 7</h5>
+                        <p class="card-text">Valide três campos de texto que representem dia, mês e ano:
+                            Dia: entre 1 e 31.
+                            Mês: entre 1 e 12.
+                            Ano: > 1949.
+                        </p>
+                        <a href="q7.html" target="_blank" class="btn btn-outline-success my-2 my-sm-0">Ver resposta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-copyright text-center py-3">© 2019 Copyright
+            <a href="https://www.cesusc.edu.br/" target="_blank">Faculdade CESUSC</a>
+        </div>
+    </footer>
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

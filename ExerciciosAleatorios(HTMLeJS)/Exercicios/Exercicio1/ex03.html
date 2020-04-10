@@ -1,0 +1,44 @@
+<!-- c) Leia dois valores e a operação a ser realizada ('+', '-', '*' ou '/'). 
+Use o 'switch'.-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            
+            var a1 = parseInt(prompt("Digite o primeiro valor da operação."));
+            var operacao = prompt("Digite o símbolo que representa a operação \n('+' = soma | '-' = subtração | '*' = multiplicação | '/' = divisão");
+            var a2 = parseInt(prompt("Digite o segundo valor da operação."));
+
+            switch(operacao) {
+                case('+'):
+                    var resultado = a1 + a2;
+                    alert("O resultado da operação (" + a1 + " + " + a2 + ") é igual a " + resultado + ".");
+                    break;
+                case('-'):
+                    var resultado = a1 - a2;
+                    alert("O resultado da operação (" + a1 + " - " + a2 + ") é igual a " + resultado + ".");
+                    break;
+                case('*'):
+                    var resultado = a1 * a2;
+                    alert("O resultado da operação (" + a1 + " * " + a2 + ") é igual a " + resultado + ".");
+                    break;
+                case('/'):
+                    var resultado = a1 / a2;
+                    alert("O resultado da operação (" + a1 + " / " + a2 + ") é igual a " + resultado + ".");
+                    break;
+                default:
+                    alert("Aê bicho, tu digitou errado.");
+            }
+
+        </script>
+
+    </body>
+
+</html>

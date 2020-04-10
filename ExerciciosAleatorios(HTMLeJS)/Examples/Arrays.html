@@ -1,0 +1,66 @@
+<!-- Maneiras de declarar e usar arrays com JS.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+</head>
+
+<p><strong>Arrays:</strong></p>
+<br>
+<p><strong>Método 1:</strong></p>
+<br>
+var nomes = new Array();
+nomes[0] = "Alyne";
+nomes[1] = "Sabrina";
+nomes[2] = "Pedro";
+<br><br>
+<strong>Edit:</strong> O primeiro método provou-se funcional.
+<br>
+<p><strong>Método 2:</strong></p>
+<br>
+var nomes = new Array("Alyne","Sabrina", "Pedro");
+<br><br>
+<strong>Edit:</strong> O segundo método provou-se funcional.
+<br>
+<p><strong>Método 3:</strong></p>
+<br>
+var nomes = ["Alyne","Sabrina","Pedro"];
+<br><br>
+<strong>Edit:</strong> O terceiro método provou-se funcional.
+<br>
+<p><strong>Método 4:</strong></p>
+<br>
+String nomes[3] = new String["Alyne","Sabrina","Pedro"];
+<br><br>
+<strong>Edit:</strong> Não pude nem testar o quarto método, provando-o não funcional.
+<br>
+
+<script>
+var names = new Array("Alyne","Sabrina","Pedro");
+
+for(var i=0;i<3;i++){
+    console.log("O nome número " + (i+1) + " é: " + names[i]);
+}
+/*var nomes = new Array();
+nomes[0] = prompt("Digite o primeiro nome:");
+nomes[1] = prompt("Digite o segundo nome:");
+nomes[2] = prompt("Digite o terceiro nome:");
+
+for(var i=0;i<3;i++){
+    console.log("O nome número " + (i+1) + " é: " + nomes[i]);
+}
+
+
+
+var nomes = ["Alyne","Sabrina","Pedro"];
+for(var i=0;i<3;i++){
+    console.log("O nome número " + (i+1) + " é: " + nomes[i]);
+}
+
+String nomes[3] = new String["Alyne","Sabrina","Pedro"];*/
+
+</script>
+
+</html>

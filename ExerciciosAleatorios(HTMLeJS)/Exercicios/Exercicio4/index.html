@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Exercício 4</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="mascara.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<form class="form-horizontal">
+                    <div class="form-group form-group">
+						<label class="col-sm-4 control-label" for="formGroupInputSmall">Nome:</label>
+						<div class="col-sm-8">
+							<input class="form-control" type="text" id="nome">
+                        </div>
+                    </div>
+                    <!-- NOME -->
+                    <br>
+                    <div class="form-group form-group">
+                        <label class="col-sm-4 control-label" for="formGroupInputSmall">Data de Nascimento:</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" id="nascimento" placeholder="##/##/####"
+                                onkeyup="mascara('##/##/####',this,event,true)" maxlength="8">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DATA DE NASCIMENTO -->
+                    <div class="form-group form-group">
+                        <div>
+                            <label class="col-sm-4 control-label" for="formGroupInputSmall">Sexo:</label>
+                            <input type="radio" id="masculino" name="sexo" value="masculino">
+                            <label for="masculino">Masculino</label><br>
+                            <input type="radio" id="feminino" name="sexo" value="feminino">
+                            <label for="feminino">Feminino</label><br>
+                        </div>
+                    </div>
+                    <!-- SEXO -->
+                    <div class="form-group">
+                        <div>
+                            <br><br>
+                            <label for="exampleFormControlSelect1">Tipo do Logradouro:</label>
+                            <select class="form-control" id="cbxTipoDeLogradouro">
+                                <option id="optValor" value="">-Selecione-</option>
+                                <option id="optValor" value="1">Praça</option>
+                                <option id="optValor" value="2">Avenida</option>
+                                <option id="optValor" value="3">Parque</option>
+                                <option id="optValor" value="4">Rua</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- TIPO DE LOGRADOURO -->
+                    <div class="form-group form-group">
+                        <label class="col-sm-4 control-label" for="formGroupInputSmall">Logradouro:</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" id="logradouro">
+                        </div>
+                    </div>
+                    <!-- LOGRADOURO -->
+                    <div class="form-group form-group">
+                        <label class="col-sm-4 control-label" for="formGroupInputSmall">Número:</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" id="numero">
+                        </div>
+                    </div>
+                    <!-- NÚMERO -->
+                    <div class="form-group form-group">
+                        <label class="col-sm-4 control-label" for="formGroupInputSmall">Bairro:</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" id="bairro">
+                        </div>
+                    </div>
+                    <!-- BAIRRO -->
+                    <div class="form-group form-group">
+						<label class="col-sm-4 control-label" for="formGroupInputSmall">CEP:</label>
+						<div class="col-sm-8">
+							<input class="form-control" type="text" id="cep" placeholder="##.###-###"
+								onkeyup="mascara('##.###-###',this,event,true)" maxlength="8">
+						</div>
+                    </div>
+                    <!-- CEP -->
+                    <div class="form-group form-group">
+                        <label class="col-sm-4 control-label" for="formGroupInputSmall">Complemento:</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" id="complemento">
+                        </div>
+                    </div>
+                    <!-- COMPLEMENTO -->
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Estado:</label>
+                        <select class="form-control" id="cbxEstado">
+                            <option id="optValor" value="">-Selecione-</option>
+                            <option id="optValor" value="1">Acre</option>
+                            <option id="optValor" value="2">Alagoas</option>
+                            <option id="optValor" value="3">Amapá</option>
+                            <option id="optValor" value="4">Amazonas</option>
+                            <option id="optValor" value="5">Bahia</option>
+                            <option id="optValor" value="6">Ceará</option>
+                            <option id="optValor" value="7">Distrito Federal</option>
+                            <option id="optValor" value="8">Espirito Santo</option>
+                            <option id="optValor" value="9">Goiás</option>
+                            <option id="optValor" value="10">Maranhão</option>
+                            <option id="optValor" value="11">Mato Grosso</option>
+                            <option id="optValor" value="12">Mato Grosso do Sul</option>
+                            <option id="optValor" value="13">Minas Gerais</option>
+                            <option id="optValor" value="14">Pará</option>
+                            <option id="optValor" value="15">Paraíba</option>
+                            <option id="optValor" value="16">Paraná</option>
+                            <option id="optValor" value="17">Pernambuco</option>
+                            <option id="optValor" value="18">Piauí</option>
+                            <option id="optValor" value="19">Rio de Janeiro</option>
+                            <option id="optValor" value="20">Rio Grande do Norte</option>
+                            <option id="optValor" value="21">Rio Grande do Sul</option>
+                            <option id="optValor" value="22">Rondônia</option>
+                            <option id="optValor" value="23">Roraima</option>
+                            <option id="optValor" value="24">Santa Catarina</option>
+                            <option id="optValor" value="25">São Paulo</option>
+                            <option id="optValor" value="26">Sergipe</option>
+                            <option id="optValor" value="27">Tocantins</option>
+                        </select>
+                    </div>
+                    <!-- ESTADO -->
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Cidade:</label>
+                        <select class="form-control" id="cbxCidade">
+                            <option id="optValor" value="">-Selecione-</option>
+                            <option id="optValor" value="1">Branquinha</option>
+                            <option id="optValor" value="2">Pelotas</option>
+                            <option id="optValor" value="3">Natal</option>
+                            <option id="optValor" value="4">Florianópolis</option>
+                            <option id="optValor" value="5">Chapecó</option>
+                            <option id="optValor" value="6">Xaxim</option>
+                            <option id="optValor" value="7">Porto Alegre</option>
+                            <option id="optValor" value="8">São José</option>
+                            <option id="optValor" value="9">Biguaçu</option>
+                            <option id="optValor" value="10">Lages</option>
+                        </select>
+                    </div>
+                    <!-- CIDADE -->
+                    <!-- Coloquei só 10 cidades como exemplo, como houveras sugerido=me.-->
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Escolaridade:</label>
+                        <select class="form-control" id="cbxEscolaridade">
+                            <option id="optValor" value="">-Selecione-</option>
+                            <option id="optValor" value="1">Ensino Fundamental</option>
+                            <option id="optValor" value="2">Ensino Médio</option>
+                            <option id="optValor" value="3">Ensino Superior Incompleto</option>
+                            <option id="optValor" value="4">Ensino Superior Completo</option>
+                        </select>
+                    </div>
+                    <!-- ESCOLARIDADE -->
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Profissão:</label>
+                        <select class="form-control" id="cbxProfissao">
+                            <option id="optValor" value="">-Selecione-</option>
+                            <option id="optValor" value="1">Analista de Testes</option>
+                            <option id="optValor" value="2">Programador Java</option>
+                            <option id="optValor" value="3">Administrador</option>
+                            <option id="optValor" value="4">Web Designer</option>
+                            <option id="optValor" value="5">Psicólogo</option>
+                        </select>
+                    </div>
+                    <!-- PROFISSÃO -->
+                    <div class="form-group form-group">
+						<label class="col-sm-4 control-label" for="formGroupInputSmall">CPF:</label>
+						<div class="col-sm-8">
+							<input class="form-control" type="text" id="cep" placeholder="###.###.###-##"
+								onkeyup="mascara('###.###.###-##',this,event,true)" maxlength="11">
+						</div>
+                    </div>
+                    <!-- CPF -->
+                    <div class="form-group form-group">
+                        <label class="col-sm-4 control-label" for="formGroupInputSmall">RG:</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" id="rg" minlength="7" maxlength="12">
+                        </div>
+                    </div>
+                    <!-- RG -->
+                    <div class="form-group form-group">
+						<label class="col-sm-4 control-label" for="formGroupInputSmall">Celular:</label>
+						<div class="col-sm-8">
+							<input class="form-control" type="text" id="celular" placeholder="(##)#####.####"
+								onkeyup="mascara('(##)#####.####',this,event,true)" maxlength="14">
+						</div>
+                    </div>
+                    <!-- CELULAR -->
+                    <div class="form-group form-group">
+                        <label class="col-sm-4 control-label" for="formGroupInputSmall">Renda Mensal:</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" id="rendamensal">
+                        </div>
+                    </div>
+                    <!-- RENDA MENSAL -->
+                    <div class="form-group form-group">
+                        <label class="col-sm-4 control-label" for="formGroupInputSmall">Áreas de Interesse:</label>
+                        <input type="checkbox" id="interesse1" name="interesse1" value="BancoDeDados">
+                        <label for="interesse1"> Banco de Dados</label><br>
+                        <input type="checkbox" id="interesse2" name="interesse2" value="EngenhariaDeSoftware">
+                        <label for="interesse1"> Engenharia de Software</label><br>
+                        <input type="checkbox" id="interesse3" name="interesse3" value="InteligenciaArtificial">
+                        <label for="interesse1"> Inteligência Artificial</label><br>
+                    </div>
+                    <!-- ÁREAS DE INTERESSE -->
+                    <div class="form-group form-group-sm text-center">
+						<div class="col-sm-12">
+							<button type="submit" type="button" class="btn btn-default" onclick="enviarDados()"><span
+									class="glyphicon glyphicon-trash" aria-hidden="true"></span> Enviar</button>
+						</div>
+                    </div>
+                    <!-- ENVIAR -->
+					<div class="form-group form-group-sm text-center">
+						<div class="col-sm-12">
+							<button type="reset" type="button" class="btn btn-default" onclick="limparCampos()"><span
+									class="glyphicon glyphicon-trash" aria-hidden="true"></span> Limpar</button>
+						</div>
+                    </div>
+                    <!-- LIMPAR CAMPOS -->
+				</form>
+		</div>
+	</div>
+</body>
+
+</html>

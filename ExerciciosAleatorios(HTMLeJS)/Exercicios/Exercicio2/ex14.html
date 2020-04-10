@@ -1,0 +1,46 @@
+<!-- 14) Faça um algoritmo que receba dois números reais e um código de seleção de usuário. Se o código digitado for 1, faça o algoritmo adicionar os dois números previamente digitados e mostrar o resultado. Se o código de seleção for 2, os números deverão ser multiplicados. Se o código for 3, o primeiro número deve ser dividido pelo segundo. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            
+            var numeroUm = parseFloat(prompt("Digite o primeiro número a ser usado na operação:"));
+            var numeroDois = parseFloat(prompt("Digite o segundo número a ser usado na operação:"));
+            var resultado = parseFloat(0);
+
+            do{
+                var numeroOperacao = prompt("Digite o número que corresponde à operação que pretendes fazer. \nOperações disponíveis: \n1) Somar os dois números digitados. \n2) Multiplicar os números digitados. \n3) Dividir o primeiro número pelo segundo.");
+                if (numeroOperacao != '1' && numeroOperacao != '2' && numeroOperacao != '3') {
+                    alert("Opção inexistente. Tente novamente.");
+                }
+            } while (numeroOperacao != '1' && numeroOperacao != '2' && numeroOperacao != '3');
+
+            switch(numeroOperacao){
+                case('1'):
+                    resultado = numeroUm + numeroDois;
+                    break;
+                case('2'):
+                    resultado = numeroUm * numeroDois;
+                    break;
+                case('3'): 
+                    resultado = numeroUm / numeroDois;
+                    break;
+                default:
+                    alert("Ihhh, bicho, parece que deu algum problema aê.");
+                    break;
+            }
+
+            alert("O resultado da operação desejada (número " + numeroOperacao + ") é: " + resultado + ".");
+
+        </script>
+
+    </body>
+
+</html>

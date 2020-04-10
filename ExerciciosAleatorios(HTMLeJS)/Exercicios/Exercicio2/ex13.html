@@ -1,0 +1,37 @@
+<!-- 13) Faça um algoritmo que leia o nome e as três notas de uma disciplica de um aluno e, no fim, escreva o nome do aluno, sua média e se ele foi aprovado ou não. Sabe-se que a média para aprovação escolar é 7. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+            
+            var nomeAluno = prompt("Digite o nome do(a) aluno(a):");
+            var notas = [];
+            var totalNotas = parseInt(0);
+            
+            for (var i=0; i<3; i++){
+                notas[i] = parseInt(prompt("Digite a nota número " + (i+1) + " do(a) " + nomeAluno + ":"));
+                totalNotas = totalNotas + notas[i];
+            }
+            
+            media = totalNotas/3;
+
+            if (media >= 7){
+                var situacao = "aprovado(a)";
+            }
+            else {
+                var situacao = "reprovado(a)";
+            }
+
+            alert("A média final do(a) " + nomeAluno + " equivale a: " + media + ". \nIsso significa que o(a) aluno(a) foi " + situacao + ".");
+        </script>
+
+    </body>
+
+</html>
